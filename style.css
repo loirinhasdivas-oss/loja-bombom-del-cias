@@ -1,0 +1,80 @@
+:root {
+    --pink-bg: #fbc2d4;
+    --pink-card: #ffffff;
+    --pink-soft: #ffe4ec;
+    --dark-pink: #d81b60;
+    --brown-text: #5d2a18;
+}
+
+* { box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background-color: var(--pink-bg); color: var(--brown-text); margin: 0; padding: 20px; }
+
+.container { max-width: 1100px; margin: auto; }
+
+header { text-align: center; margin-bottom: 30px; }
+.logo-text { font-size: 3rem; color: white; text-shadow: 3px 3px var(--dark-pink); margin: 0; }
+.logo-text span { color: var(--dark-pink); display: block; font-size: 3.5rem; line-height: 0.8; }
+
+.content { display: grid; grid-template-columns: 1fr 400px; gap: 30px; }
+@media (max-width: 900px) { .content { grid-template-columns: 1fr; } }
+
+.category h3 { background: var(--dark-pink); color: white; padding: 10px 25px; border-radius: 50px; display: inline-block; margin-bottom: 15px; }
+
+/* ITENS DO CARDÁPIO */
+.item {
+    background: var(--pink-card); display: flex; justify-content: space-between; align-items: center;
+    padding: 15px; margin-bottom: 12px; border-radius: 20px; cursor: pointer; transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.item:hover { transform: scale(1.02); }
+
+.item-info { display: flex; align-items: center; gap: 15px; }
+.img-container { position: relative; }
+.item-info img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--pink-soft); }
+
+.badge {
+    position: absolute; top: -5px; right: -5px; background: var(--dark-pink); color: white;
+    width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: bold; border: 2px solid white; visibility: hidden;
+}
+
+/* CARRINHO */
+.order-summary { background: var(--pink-soft); padding: 25px; border-radius: 30px; border: 2px dashed var(--dark-pink); height: fit-content; }
+.cart-box { background: white; border-radius: 15px; min-height: 80px; padding: 15px; margin-bottom: 20px; }
+
+.cart-line { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 14px; }
+.qty-btns button { background: var(--pink-bg); border: none; padding: 2px 8px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+
+.checkout-form { display: flex; flex-direction: column; gap: 8px; margin-bottom: 15px; }
+.checkout-form input, .checkout-form select { padding: 10px; border-radius: 10px; border: 1px solid white; }
+
+.coupon-box { display: flex; gap: 5px; }
+.coupon-box button { background: var(--brown-text); color: white; border: none; padding: 0 15px; border-radius: 8px; cursor: pointer; }
+
+.btn-finalizar { width: 100%; padding: 20px; background: var(--dark-pink); color: white; border: none; border-radius: 15px; font-size: 1.2rem; font-weight: bold; cursor: pointer; }
+
+/* MODAL NOTA FISCAL */
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.nota { background: white; padding: 25px; border-radius: 20px; width: 380px; max-height: 90vh; overflow-y: auto; }
+.nota h2 { text-align: center; color: var(--dark-pink); }
+.hidden { display: none !important; }
+.nota-btns { display: flex; gap: 10px; margin-top: 15px; }
+.btn-print { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 8px; cursor: pointer; }
+.btn-fechar { flex: 1; padding: 10px; background: var(--dark-pink); color: white; border: none; border-radius: 8px; cursor: pointer; }
+
+/* RODAPÉ */
+.footer-history { background: var(--brown-text); color: var(--pink-soft); padding: 40px 20px; text-align: center; margin-top: 50px; border-radius: 30px 30px 0 0; }
+
+/* Adicione estas linhas ao final do seu arquivo style.css */
+.text-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc {
+    font-size: 0.8rem;
+    color: #8a6d63;
+    margin: 4px 0 0 0;
+    line-height: 1.2;
+}

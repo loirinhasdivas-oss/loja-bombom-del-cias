@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombom Delícias - O Clássico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="logo-text">BOMBOM <span>DELÍCIAS</span></h1>
+    </header>
+
+    <main class="content">
+        <section class="menu">
+            <div class="category">
+                <h3>COPINHO DELÍCIA (combos)</h3>
+                <div class="item" onclick="adicionarItem('Combo 10 copos', 20)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="copinho.jpeg">
+                            <span class="badge" id="badge-Combo-10-copos">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Combo 10 copos</span>
+                            <p class="desc">Dez unidades dos nossos famosos copinhos de chocolate cremoso.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 20,00</strong>
+                </div>
+                <div class="item" onclick="adicionarItem('Combo 20 copos', 40)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="copinho.jpeg">
+                            <span class="badge" id="badge-Combo-20-copos">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Combo 20 copos</span>
+                            <p class="desc">Perfeito para pequenas reuniões. Vinte copinhos artesanais.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 40,00</strong>
+                </div>
+                <div class="item" onclick="adicionarItem('Combo 30 copos', 60)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="copinho.jpeg">
+                            <span class="badge" id="badge-Combo-30-copos">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Combo 30 copos</span>
+                            <p class="desc">Trinta unidades para compartilhar muita doçura.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 60,00</strong>
+                </div>
+                <div class="item" onclick="adicionarItem('Combo 40 copos', 80)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="copinho.jpeg">
+                            <span class="badge" id="badge-Combo-40-copos">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Combo 40 copos</span>
+                            <p class="desc">O combo supremo para os amantes de chocolate.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 80,00</strong>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>DOCES PERSONALIZADOS</h3>
+                <div class="item" onclick="adicionarItem('Brigadeiro', 5)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="docinho1.jpeg">
+                            <span class="badge" id="badge-Brigadeiro">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Brigadeiro</span>
+                            <p class="desc">Chocolate belga com granulado macio.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 5,00</strong>
+                </div>
+                <div class="item" onclick="adicionarItem('Beijinho', 6)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="docinho1.jpeg">
+                            <span class="badge" id="badge-Beijinho">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Beijinho</span>
+                            <p class="desc">Coco ralado fresco e um toque de leite condensado.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 6,00</strong>
+                </div>
+                <div class="item" onclick="adicionarItem('Morango', 7)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="docinho1.jpeg">
+                            <span class="badge" id="badge-Morango">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Morango</span>
+                            <p class="desc">Mousse de morango coberto com açúcar cristal.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 7,00</strong>
+                </div>
+                <div class="item" onclick="adicionarItem('Casadinho', 4)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="docinho1.jpeg">
+                            <span class="badge" id="badge-Casadinho">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Casadinho</span>
+                            <p class="desc">A união perfeita entre o brigadeiro preto e o branco.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 4,00</strong>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>BROWNIES</h3>
+                <div class="item" onclick="adicionarItem('Brownie Tradicional', 10)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="brownie.jpeg">
+                            <span class="badge" id="badge-Brownie-Tradicional">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Brownie Tradicional</span>
+                            <p class="desc">Massa molhadinha com casquinha crocante.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 10,00</strong>
+                </div>
+                <div class="item" onclick="adicionarItem('Brownie Doce de Leite', 12)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="brownie.jpeg">
+                            <span class="badge" id="badge-Brownie-Doce-de-Leite">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Brownie Doce de Leite</span>
+                            <p class="desc">Recheado com doce de leite artesanal mineiro.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 12,00</strong>
+                </div>
+                <div class="item" onclick="adicionarItem('Brownie Ninho/Morango', 15)">
+                    <div class="item-info">
+                        <div class="img-container">
+                            <img src="brownie.jpeg">
+                            <span class="badge" id="badge-Brownie-Ninho-Morango">0</span>
+                        </div>
+                        <div class="text-details">
+                            <span>Ninho com Morango</span>
+                            <p class="desc">Leite Ninho cremoso com pedaços de morango fresco.</p>
+                        </div>
+                    </div>
+                    <strong>R$ 15,00</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-summary">
+            <h3>Seu Pedido 🛒</h3>
+            <div id="lista-pedido" class="cart-box"></div>
+
+            <div class="checkout-form">
+                <input type="text" id="cliente-nome" placeholder="Seu Nome">
+                <input type="text" id="cliente-endereco" placeholder="Endereço de Entrega">
+                
+                <textarea id="cliente-obs" placeholder="Alguma observação? (Ex: sem coco, retirar no portão)" style="padding: 10px; border-radius: 10px; border: 1px solid white; resize: vertical; font-size: 14px;"></textarea>
+
+                <select id="pagamento-metodo" onchange="toggleTroco()">
+                    <option value="">Forma de Pagamento</option>
+                    <option value="Pix">Pix (10% OFF)</option>
+                    <option value="Cartão">Cartão</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                </select>
+
+                <div id="campo-troco" class="hidden">
+                    <input type="number" id="troco-para" placeholder="Troco para quanto?">
+                </div>
+
+                <div class="coupon-box">
+                    <input type="text" id="cupom-input" placeholder="Cupom DOCE10">
+                    <button onclick="aplicarCupom()">OK</button>
+                </div>
+                <p id="msg-cupom"></p>
+            </div>
+
+            <div class="totals">
+                <p>Subtotal: <span>R$ <span id="subtotal">0,00</span></span></p>
+                <p>Descontos: <span>R$ <span id="descontos">0,00</span></span></p>
+                <p><strong>Total: R$ <span id="total">0,00</span></strong></p>
+            </div>
+            <button class="btn-finalizar" onclick="finalizarPedido()">CONCLUIR PEDIDO</button>
+        </section>
+    </main>
+
+    <footer class="footer-history">
+        <div class="footer-content">
+            <h3>Nossa Doce História</h3>
+            <p>A Bombom Delícias nasceu em uma pequena cozinha familiar com o desejo de transformar momentos simples em memórias inesquecíveis. Cada produto é feito artesanalmente com ingredientes selecionados. Obrigado por adoçar sua vida conosco!</p>
+            <p>© 2026 Bombom Delícias</p>
+        </div>
+    </footer>
+</div>
+
+<div id="nota-fiscal-overlay" class="overlay hidden">
+    <div class="nota">
+        <h2>🍬 Bombom Delícias</h2>
+        <p><strong>RESUMO DO PEDIDO</strong></p>
+        <hr>
+        <div class="nota-dados">
+            <p><strong>Nome:</strong> <span id="nf-nome"></span></p>
+            <p><strong>Endereço:</strong> <span id="nf-endereco"></span></p>
+            <p><strong>Observação:</strong> <span id="nf-obs"></span></p>
+            <p><strong>Pagamento:</strong> <span id="nf-pagamento"></span></p>
+            <p id="nf-troco-txt"></p>
+        </div>
+        <hr>
+        <div id="nf-itens"></div>
+        <hr>
+        <div class="nota-footer">
+            <p>Subtotal: R$ <span id="nf-subtotal"></span></p>
+            <p>Descontos: R$ <span id="nf-descontos"></span></p>
+            <h3>Total Final: R$ <span id="nf-total"></span></h3>
+        </div>
+        <div class="nota-btns">
+            <button onclick="window.print()" class="btn-print">Imprimir / PDF</button>
+            <button onclick="fecharNota()" class="btn-fechar">Fechar</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
